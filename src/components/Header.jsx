@@ -60,10 +60,10 @@ function Header({ refs }) {
                             <p onClick={() => handleScroll(refs.about)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>About</p>
                             <p onClick={() => handleScroll(refs.education)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>Education</p>
                             <p onClick={() => handleScroll(refs.experience)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>Experience</p>
-                            <p onClick={() => handleScroll(refs.experience)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>Skills</p>
-                            
-                            <p onClick={() => handleScroll(refs.services)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>Services</p>
+                            <p onClick={() => handleScroll(refs.skills)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>Skills</p>
                             <p onClick={() => handleScroll(refs.projects)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>Projects</p>
+                            <p onClick={() => handleScroll(refs.services)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>Services</p>
+                            
                             <p onClick={() => handleScroll(refs.contact)} className='cursor-pointer p-1 mt-1 text-center border-none rounded h-[40px] w-[110px] hover:bg-violet-300 text-white hover:text-black'>Contact</p>
                         </div>
                     </div>

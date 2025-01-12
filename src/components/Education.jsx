@@ -20,12 +20,12 @@ function Education() {
           />
         <div className='md:grid md:grid-cols-2 gap-10 mt-10'>
           <div>
-            <img src='eduGif.gif' className='hidden md:block h-[500px]'></img>
+            <img src='eduImg.jpg' className='hidden md:block h-[500px]'></img>
           </div>
           <div>
             <div className='flex flex-col gap-10 mt-8 text-white'>
-              <div className='border border-gray-300 md:w-[600px] w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
-                <p className='text-center text-violet-500 font-extrabold'>2022-2024</p>
+              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] bg-gradient-to-r from-violet-800 to-violet-400 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+                <p className='text-center text-white font-extrabold'>2022-2024</p>
                 <div className='flex flex-col'>
                   <div className='flex flex-row gap-2'>
                     <GraduationCap className='h-9 w-9' />
@@ -37,8 +37,8 @@ function Education() {
                   </div>
                 </div>
               </div>
-              <div className='border border-gray-300 md:w-[600px] w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
-                <p className='text-center text-violet-500 font-extrabold'>2018-2022</p>
+              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] bg-gradient-to-r from-violet-800 to-violet-400 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+                <p className='text-center text-white font-extrabold'>2018-2022</p>
                 <div className='flex flex-col'>
                   <div className='flex flex-row gap-2'>
                     <GraduationCap className=' h-9 w-9' />
@@ -50,8 +50,8 @@ function Education() {
                   </div>
                 </div>
               </div>
-              <div className='border border-gray-300 md:w-[600px] w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
-                <p className='text-center text-violet-500 font-extrabold'>2018</p>
+              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] bg-gradient-to-r from-violet-800 to-violet-400 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+                <p className='text-center text-white font-extrabold'>2018</p>
                 <div className='flex flex-col'>
                   <div className='flex flex-row gap-2'>
                     <GraduationCap className=' h-9 w-9' />
