@@ -23,12 +23,12 @@ function Projects() {
       />
       <div>
         <div className='flex flex-row gap-12'>
-          <p onClick={()=>setState('website')} className='text-white mt-10 cursor-pointer hover:underline decoration-violet-500 underline-offset-8'>Website Projects</p>
-          <p onClick={()=>setState('android')} className='text-white mt-10 cursor-pointer hover:underline decoration-violet-500 underline-offset-8'>Android Projects</p>
-          <p onClick={()=>setState('ML')} className='text-white mt-10 cursor-pointer hover:underline decoration-violet-500 underline-offset-8'>ML Projects</p>
-          <p onClick={()=>setState('coding')} className='text-white mt-10 cursor-pointer hover:underline decoration-violet-500 underline-offset-8'>Coding Profiles</p>
+          <p onClick={()=>setState('website')} className='text-purple-400 mt-10 cursor-pointer hover:underline decoration-violet-500 underline-offset-8'>Website</p>
+          <p onClick={()=>setState('android')} className='text-purple-400 mt-10 cursor-pointer hover:underline decoration-violet-500 underline-offset-8'>Android</p>
+          <p onClick={()=>setState('ML')} className='text-purple-400 mt-10 cursor-pointer hover:underline decoration-violet-500 underline-offset-8'>ML</p>
+          <p onClick={()=>setState('coding')} className='text-purple-400 mt-10 cursor-pointer hover:underline decoration-violet-500 underline-offset-8'>Coding Profiles</p>
         </div>
-        <hr className='w-[50%] mt-5'/>
+        <hr className='md:w-[50%]  mt-5'/>
       </div>
       {state === 'website' ?(<Websites/>):
       state === 'android' ? (<Android/>):

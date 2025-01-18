@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import Header from './components/Header';
@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Services from './components/Services';
+import LoaderScreen from './components/LoaderScreen';
 
 function App() {
   const homeRef = useRef(null);
@@ -19,6 +20,8 @@ function App() {
   const contactRef = useRef(null);
   const skillsRef = useRef(null);
   const servicesRef = useRef(null);
+
+  const [isLoading, setIsLoading] = useState(true);
 
   const refs = {
     home: homeRef,
@@ -31,35 +34,47 @@ function App() {
     services: servicesRef
   };
 
+  useEffect(() => {
+    setIsLoading(true);
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div>
-      <Header refs={refs} />
-      <div ref={homeRef}>
-        <Home />
-      </div>
-      <div ref={aboutRef}>
-        <About />
-      </div>
-      <div ref={educationRef}>
-        <Education />
-      </div>
-      
-      <div ref={experienceRef}>
-        <Experience />
-      </div>
-      <div ref={skillsRef}>
-        <Skills />
-      </div>
-      
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
-      <div ref={servicesRef}>
-        <Services />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
-      </div>
+      {isLoading ? (
+        <LoaderScreen />
+      ) : (
+        <div>
+          <Header refs={refs} />
+          <div ref={homeRef}>
+            <Home />
+          </div>
+          <div ref={aboutRef}>
+            <About />
+          </div>
+          <div ref={educationRef}>
+            <Education />
+          </div>
+          <div ref={experienceRef}>
+            <Experience />
+          </div>
+          <div ref={skillsRef}>
+            <Skills />
+          </div>
+          <div ref={projectsRef}>
+            <Projects />
+          </div>
+          <div ref={servicesRef}>
+            <Services />
+          </div>
+          <div ref={contactRef}>
+            <Contact />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,0 +1,36 @@
+.loader-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0a0e28;
+}
+
+.loader-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  color: #ff69b4;
+  background: linear-gradient(45deg, #ff69b4, #ff1493, #ff4500, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+.Typewriter__wrapper {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  color: #ff69b4;
+  background: linear-gradient(45deg, #ff69b4, #ff1493, #ff4500, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation:  3s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493, 0 0 30px #ff4500, 0 0 40px #ff8c00;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff1493, 0 0 40px #ff4500, 0 0 50px #ff8c00;
+  }
+}

@@ -5,40 +5,41 @@ import SkillsCard from './Cards/SkillsCard';
 import { SiAndroid, SiAwsamplify, SiBitbucket, SiBootstrap, SiC, SiConfluence, SiDocker, SiExpress, SiJavascript, SiJinja, SiJira, SiMaterialdesign, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostman, SiPython, SiReacthookform, SiRedux, SiSpringboot, SiSwagger, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
 const skills = [
-  { name: 'C', icon: <SiC /> },
-  { name: 'Python', icon: <SiPython /> },
-  { name: 'Java', icon: <Code /> },
-  { name: 'Javascript', icon: <SiJavascript /> },
-  { name: 'Typescript', icon: <SiTypescript /> },
-  { name: 'MySQL', icon: <Database /> },
-  { name: 'DBMS', icon: <Server /> },
-  { name: 'ReactJS', icon: <Codepen /> },
-  { name: 'Junit Testing', icon: <FileText /> },
-  { name: 'Git/Github', icon: <GitBranch /> },
-  { name: 'Spring Tool Suite', icon: <SiSpringboot /> },
-  { name: 'Visual Studio', icon: <Code2 /> },
-  { name: 'Android Studio', icon: <SiAndroid /> },
-  { name: 'DSA', icon: <Terminal /> },
-  { name: 'SDLC', icon: <Terminal /> },
-  { name: 'NestJS', icon: <SiNestjs /> },
-  { name: 'HTML/CSS', icon: <Layout /> },
-  { name: 'React Native', icon: <SiReacthookform /> },
-  { name: 'MongoDB', icon: <SiMongodb /> },
-  { name: 'NodeJS', icon: <SiNodedotjs /> },
-  { name: 'NextJS', icon: <SiNextdotjs /> },
-  { name: 'ExpressJS', icon: <SiExpress /> },
-  { name: 'Redux', icon: <SiRedux /> },
-  { name: 'Material UI', icon: <SiMaterialdesign /> },
-  { name: 'Bootstrap', icon: <SiBootstrap /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
-  { name: 'Bitbucket', icon: <SiBitbucket /> },
-  { name: 'JIRA', icon: <SiJira /> },
-  { name: 'Confluence', icon: <SiConfluence /> },
-  { name: 'Postman', icon: <SiPostman /> },
-  { name: 'Swagger', icon: <SiSwagger /> },
-  { name: 'Docker', icon: <SiDocker /> },
-  { name: 'AWS', icon: <SiAwsamplify /> }
+  { name: 'C', icon: <SiC className="text-[#A8B9CC] text-6xl" /> },
+  { name: 'Python', icon: <SiPython className="text-[#306998] text-6xl" /> },
+  { name: 'Java', icon: <Code className="text-[#007396] text-6xl" /> },
+  { name: 'Javascript', icon: <SiJavascript className="text-[#F7DF1E] text-6xl" /> },
+  { name: 'Typescript', icon: <SiTypescript className="text-[#3178C6] text-6xl" /> },
+  { name: 'MySQL', icon: <Database className="text-[#4479A1] text-6xl" /> },
+  { name: 'DBMS', icon: <Server className="text-[#00A0A0] text-6xl" /> },
+  { name: 'ReactJS', icon: <Codepen className="text-[#61DAFB] text-6xl" /> },
+  { name: 'Junit Testing', icon: <FileText className="text-[#25A162] text-6xl" /> },
+  { name: 'Git/Github', icon: <GitBranch className="text-[#181717] text-6xl" /> },
+  { name: 'Spring Tool Suite', icon: <SiSpringboot className="text-[#6DB33F] text-6xl" /> },
+  { name: 'Visual Studio', icon: <Code2 className="text-[#5C2D91] text-6xl" /> },
+  { name: 'Android Studio', icon: <SiAndroid className="text-[#3DDC84] text-6xl" /> },
+  { name: 'DSA', icon: <Terminal className="text-[#6C6C6C] text-6xl" /> },
+  { name: 'SDLC', icon: <Terminal className="text-[#1C1C1C] text-6xl" /> },
+  { name: 'NestJS', icon: <SiNestjs className="text-[#E0234E] text-6xl" /> },
+  { name: 'HTML/CSS', icon: <Layout className="text-[#E34F26] text-6xl" /> },
+  { name: 'React Native', icon: <SiReacthookform className="text-[#61DAFB] text-6xl" /> },
+  { name: 'MongoDB', icon: <SiMongodb className="text-[#47A248] text-6xl" /> },
+  { name: 'NodeJS', icon: <SiNodedotjs className="text-[#8CC84B] text-6xl" /> },
+  { name: 'NextJS', icon: <SiNextdotjs className="text-[#000000] text-6xl" /> },
+  { name: 'ExpressJS', icon: <SiExpress className="text-[#000000] text-6xl" /> },
+  { name: 'Redux', icon: <SiRedux className="text-[#764ABC] text-6xl" /> },
+  { name: 'Material UI', icon: <SiMaterialdesign className="text-[#1976D2] text-6xl" /> },
+  { name: 'Bootstrap', icon: <SiBootstrap className="text-[#563D7C] text-6xl" /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#38BDF8] text-6xl" /> },
+  { name: 'Bitbucket', icon: <SiBitbucket className="text-[#0052CC] text-6xl" /> },
+  { name: 'JIRA', icon: <SiJira className="text-[#0052CC] text-6xl" /> },
+  { name: 'Confluence', icon: <SiConfluence className="text-[#172B4D] text-6xl" /> },
+  { name: 'Postman', icon: <SiPostman className="text-[#FF6A00] text-6xl" /> },
+  { name: 'Swagger', icon: <SiSwagger className="text-[#85B324] text-6xl" /> },
+  { name: 'Docker', icon: <SiDocker className="text-[#2496ED] text-6xl" /> },
+  { name: 'AWS', icon: <SiAwsamplify className="text-[#FF9900]" /> }
 ];
+
 
 function Skills() {
   return (
@@ -74,10 +75,6 @@ function Skills() {
             />
           ))}
         </div>
-
-        {/* Add a gradient overlay to soften the edges
-        <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-white to-transparent pointer-events-none"></div> */}
       </div>
 
       <style jsx>{`
@@ -86,7 +83,7 @@ function Skills() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-${skills.length * 208}px); /* 200px card width + 8px gap */
+            transform: translateX(-${skills.length * 208}px);
           }
         }
 
@@ -95,7 +92,6 @@ function Skills() {
           will-change: transform;
         }
 
-        /* Pause on hover */
         .animate-slide:hover {
           animation-play-state: paused;
         }
