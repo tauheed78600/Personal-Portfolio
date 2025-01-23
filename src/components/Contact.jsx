@@ -1,9 +1,17 @@
 import React from 'react'
 import SplitText from './AnimatedComponents/SplitText'
-import { ForkKnife, Forklift, Github, Instagram, Linkedin, LocateIcon, Phone, Star, X } from 'lucide-react'
+import { Github, Instagram, Linkedin, LocateIcon, Phone, X } from 'lucide-react'
 import { SiLeetcode } from 'react-icons/si'
 
 function Contact() {
+  const socialLinks = [
+    { icon: <Github className='mt-1' />, link: 'https://github.com/tauheed78600' },
+    { icon: <Linkedin className='mt-1' />, link: 'https://www.linkedin.com/in/tauheed-darekar/' },
+    { icon: <SiLeetcode className='mt-1' />, link: 'https://leetcode.com/u/tauheeddarekar786/' },
+    { icon: <X className='mt-1' />, link: 'https://x.com/Tauheed41942247' },
+    { icon: <Instagram className='mt-1' />, link: 'https://www.instagram.com/tauheed21__/' }
+  ];
+
   return (
     <div>
       <div className='md:ml-[70px] ml-4 mt-20'>
@@ -20,7 +28,7 @@ function Contact() {
 
         <div className='grid md:grid-cols-2 grid-cols-1 gap-6 mt-9 w-[95%]'>
           <div>
-            <div className='brder border-purple-500 shadow-2xl border-gray-300 md:w-[600px] p-6 bg-gradient-to-r from-violet-800 to-violet-400 md:w-[90%] md:h-[520px] rounded-lg shadow-xl transition-transform duration-300 ease-in-out'>
+            <div className='brder border-purple-500 shadow-2xl border-gray-300 md:w-[600px] p-6 bg-transparent border border-gray-300 md:w-[90%] md:h-[520px] rounded-lg shadow-xl transition-transform duration-300 ease-in-out'>
               <p className='text-white'>If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests.</p>
               <div className='mt-4 ml-4'>
                 <input type='text' placeholder='Name' className='mt-4 text-white p-2 w-[90%] rounded-full h-16 p-6 bg-transparent border border-white'></input>
@@ -47,11 +55,11 @@ function Contact() {
               </div>
             </div>
             <div className='flex flex-row md:gap-14 gap-4 mt-20'>
-              <div className='h-12 w-12 rounded-full bg-purple-300 p-2'><p className='text-black ml-1 text-2xl'><Github className='mt-1' /></p></div>
-              <div className='h-12 w-12 rounded-full bg-purple-300 p-2'><p className='text-black ml-1 text-2xl'><Linkedin className='mt-1' /></p></div>
-              <div className='h-12 w-12 rounded-full bg-purple-300 p-2'><p className='text-black ml-1 text-2xl'><X className='mt-1' /></p></div>
-              <div className='h-12 w-12 rounded-full bg-purple-300 p-2'><p className='text-black ml-1 text-2xl'><SiLeetcode className='mt-1' /></p></div>
-              <div className='h-12 w-12 rounded-full bg-purple-300 p-2'><p className='text-black ml-1 text-2xl'><Instagram className='mt-1' /></p></div>
+              {socialLinks.map((item, index) => (
+                <div key={index} className='h-12 w-12 rounded-full bg-purple-300 p-2 cursor-pointer' onClick={() => window.open(item.link, '_blank')}>
+                  <p className='text-black ml-1 text-2xl'>{item.icon}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

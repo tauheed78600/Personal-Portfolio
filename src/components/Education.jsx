@@ -1,6 +1,7 @@
 import React from 'react'
 import { GraduationCap } from 'lucide-react'
 import  SplitText from './AnimatedComponents/SplitText'
+import image from '../assets/mainHome.svg'
 
 function Education() {
   return (
@@ -20,11 +21,12 @@ function Education() {
           />
         <div className='md:grid md:grid-cols-2 gap-10 mt-10'>
           <div>
-            <img src='eduImg.jpg' className='hidden md:block h-[500px]'></img>
+            <img src={image} className='hidden md:block h-[500px]'></img>
           </div>
           <div>
             <div className='flex flex-col gap-10 mt-8 text-white'>
-              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] bg-gradient-to-r from-violet-800 to-violet-400 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] backdrop-blur-xl hover:shadow-purple-500/50 shadow-2xl bg-transparent border border-gray-300 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+              <div className='absolute inset-0 bg-gradient-to-br from-transparent to-purple-900 opacity-20 rounded-xl'></div>
                 <p className='text-center text-white font-extrabold'>2022-2024</p>
                 <div className='flex flex-col'>
                   <div className='flex flex-row gap-2'>
@@ -37,7 +39,8 @@ function Education() {
                   </div>
                 </div>
               </div>
-              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] bg-gradient-to-r from-violet-800 to-violet-400 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] backdrop-blur-xl hover:shadow-purple-500/50 shadow-2xl bg-transparent border border-gray-300 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+              <div className='absolute inset-0 bg-gradient-to-br from-transparent to-purple-900 opacity-20 rounded-xl'></div>
                 <p className='text-center text-white font-extrabold'>2018-2022</p>
                 <div className='flex flex-col'>
                   <div className='flex flex-row gap-2'>
@@ -50,7 +53,8 @@ function Education() {
                   </div>
                 </div>
               </div>
-              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] bg-gradient-to-r from-violet-800 to-violet-400 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+              <div className='border border-violet-500 shadow-2xl border-gray-300 md:w-[600px] backdrop-blur-xl hover:shadow-purple-500/50 shadow-2xl bg-transparent border border-gray-300 w-[90%] md:h-[120px] rounded-lg shadow-xl p-2 hover:scale-105 transition-transform duration-300 ease-in-out'>
+              <div className='absolute inset-0 bg-gradient-to-br from-transparent to-purple-900 opacity-20 rounded-xl'></div>
                 <p className='text-center text-white font-extrabold'>2018</p>
                 <div className='flex flex-col'>
                   <div className='flex flex-row gap-2'>

@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Services from './components/Services';
 import LoaderScreen from './components/LoaderScreen';
+import { ArrowDown, ArrowDownAZ, ArrowUp } from 'lucide-react'
 
 function App() {
   const homeRef = useRef(null);
@@ -48,13 +49,15 @@ function App() {
         <LoaderScreen />
       ) : (
         <div>
+          
           <Header refs={refs} />
           <div ref={homeRef}>
-            <Home />
+            <Home contactRefs = {contactRef}/>
           </div>
           <div ref={aboutRef}>
             <About />
           </div>
+          
           <div ref={educationRef}>
             <Education />
           </div>

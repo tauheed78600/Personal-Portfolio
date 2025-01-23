@@ -29,7 +29,7 @@ function Header({ refs }) {
                 <div className='p-4'>
                     <div className='flex justify-between items-start'>
                         <div className='flex flex-row gap-4'>
-                            <div className='h-14 w-14 bg-black rounded-full p-3'><p className='text-white text-2xl'>TD</p></div>
+                            <div className='h-14 w-14 bg-black rounded-full p-3'><p className='text-white text-xl'>TD</p></div>
                             <div className='flex flex-col gap-1'>
                                 <p className='font-semibold whitespace-nowrap text-white'>Tauheed Darekar</p>
                                 <p className='text-sm text-gray-100'>Hi There, I'm a Software Developer</p>
@@ -56,13 +56,13 @@ function Header({ refs }) {
                 <div className='flex justify-between items-center p-4'>
                     <strong onClick={() => window.location.reload()} className='cursor-pointer text-3xl text-violet-600 font-extrabold'>&lt;Tauheed /&gt; </strong>
                     <div className='flex gap-8'>
-                        <p onClick={() => handleScroll(refs.about)} className='cursor-pointer p-1 text-center text-2xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:bg-violet-300 text-purple-400'>About</p>
-                        <p onClick={() => handleScroll(refs.education)} className='cursor-pointer p-1 text-center text-2xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:bg-violet-300 text-purple-400'>Education</p>
-                        <p onClick={() => handleScroll(refs.experience)} className='cursor-pointer p-1 text-center text-2xl border-none rounded h-[40px] w-[120px] hover:text-violet-700 hover:bg-violet-300 text-purple-400'>Experience</p>
-                        <p onClick={() => handleScroll(refs.skills)} className='cursor-pointer p-1 text-center text-2xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:bg-violet-300 text-purple-400'>Skills</p>
-                        <p onClick={() => handleScroll(refs.services)} className='cursor-pointer p-1 text-center text-2xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:bg-violet-300 text-purple-400'>Services</p>
-                        <p onClick={() => handleScroll(refs.projects)} className='cursor-pointer p-1 text-center text-2xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:bg-violet-300 text-purple-400'>Projects</p>
-                        <p onClick={() => handleScroll(refs.contact)} className='cursor-pointer p-1 text-center text-2xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:bg-violet-300 text-purple-400'>Contact</p>
+                        <p onClick={() => handleScroll(refs.about)} className='cursor-pointer p-1 text-center text-xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:underline underline-offset-4 text-purple-400'>About</p>
+                        <p onClick={() => handleScroll(refs.education)} className='cursor-pointer p-1 text-center text-xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:underline underline-offset-4 text-purple-400'>Education</p>
+                        <p onClick={() => handleScroll(refs.experience)} className='cursor-pointer p-1 text-center text-xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:underline underline-offset-4 text-purple-400'>Experience</p>
+                        <p onClick={() => handleScroll(refs.skills)} className='cursor-pointer p-1 text-center text-xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:underline underline-offset-4 text-purple-400'>Skills</p>
+                        <p onClick={() => handleScroll(refs.services)} className='cursor-pointer p-1 text-center text-xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:underline underline-offset-4 text-purple-400'>Services</p>
+                        <p onClick={() => handleScroll(refs.projects)} className='cursor-pointer p-1 text-center text-xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:underline underline-offset-4 text-purple-400'>Projects</p>
+                        <p onClick={() => handleScroll(refs.contact)} className='cursor-pointer p-1 text-center text-xl border-none rounded h-[40px] w-[110px] hover:text-violet-700 hover:underline underline-offset-4 text-purple-400'>Contact</p>
                     </div>
                 </div>
             </div>

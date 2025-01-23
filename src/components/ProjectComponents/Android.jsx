@@ -33,7 +33,7 @@ function Android() {
       <div className='p-8'>
       <div className='grid md:grid-cols-3 grid-cols-1 gap-6'>
         {androidProjects.map((project, index) => (
-          <div key={index} className='bg-gradient-to-br from-purple-800 via-violet-600 to-purple-900 backdrop-blur-xl shadow-2xl border border-purple-500 rounded-xl p-6 hover:scale-105 hover:shadow-purple-500/50 transition-transform duration-500 ease-in-out relative overflow-hidden'>
+          <div key={index} className='bg-transparent border border-gray-300 backdrop-blur-xl shadow-2xl border border-purple-500 rounded-xl p-6 hover:scale-105 hover:shadow-purple-500/50 transition-transform duration-500 ease-in-out relative overflow-hidden'>
             <div className='absolute inset-0 bg-gradient-to-br from-transparent to-purple-900 opacity-20 rounded-xl'></div>
             <h3 className='text-center text-purple-100 text-2xl font-semibold drop-shadow-md'>{project.title}</h3>
             <p className='mt-4 text-gray-300 text-sm leading-relaxed'>{project.description}</p>

@@ -18,7 +18,8 @@ function Experience() {
       <div className='flex justify-center md:flex-row flex-col md:gap-40 gap-9 mt-10 '>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-9'>
           <div className='flex flex-col'>
-            <div className='border p-4 rounded-xl mt-10  border-violet-500 shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out bg-gradient-to-r from-violet-900 to-violet-500  h-auto w-[90%] md:h-[150px] md:w-[700px]'>
+            <div className='border p-4 rounded-xl mt-10  border-violet-500 backdrop-blur-xl hover:shadow-purple-500/50 shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out bg-transparent border border-gray-300  h-auto w-[90%] md:h-[150px] md:w-[700px]'>
+            <div className='absolute inset-0 bg-gradient-to-br from-transparent to-purple-900 opacity-20 rounded-xl'></div>
               <div className='items-center justify-center'>
                 <p className='text-xl text-white mr-14 text-center font-extrabold'>(2024 - Present)</p>
               </div>
@@ -32,7 +33,8 @@ function Experience() {
                 <p className='text-white ml-10'>Location: Pune, India</p>
               </div>
             </div>
-            <div className='border p-4 border-violet-500 shadow-2xl rounded-xl mt-10  border-white hover:scale-105 transition-transform duration-300 ease-in-out bg-gradient-to-r from-violet-900 to-violet-500 h-auto w-[90%] md:h-[150px] md:w-[700px]'>
+            <div className='border p-4 border-violet-500 backdrop-blur-xl hover:shadow-purple-500/50 shadow-2xl rounded-xl mt-10  hover:scale-105 transition-transform duration-300 ease-in-out bg-transparent border border-gray-300 h-auto w-[90%] md:h-[150px] md:w-[700px]'>
+            <div className='absolute inset-0 bg-gradient-to-br from-transparent to-purple-900 opacity-20 rounded-xl'></div>
               <div className='items-center justify-center'>
                 <p className='text-xl text-white text-center font-extrabold'>(2023 Jun - 2023 Dec)</p>
               </div>
