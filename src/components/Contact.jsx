@@ -54,7 +54,7 @@ function Contact() {
                 <p className='text-white md:text-2xl text-xl mt-1'>Pune, Maharashtra, India</p>
               </div>
             </div>
-            <div className='flex flex-row md:gap-14 gap-4 mt-20'>
+            <div className='flex flex-row md:gap-14 gap-4 mt-20 md:ml-0 ml-5'>
               {socialLinks.map((item, index) => (
                 <div key={index} className='h-12 w-12 rounded-full bg-purple-300 p-2 cursor-pointer' onClick={() => window.open(item.link, '_blank')}>
                   <p className='text-black ml-1 text-2xl'>{item.icon}</p>

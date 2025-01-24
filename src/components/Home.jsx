@@ -14,6 +14,10 @@ function Home() {
     { icon: <Instagram className='h-11 w-9' />, link: 'https://www.instagram.com/tauheed21__/' }
   ];
 
+  const handleIconClick = (link) => {
+    window.open(link, '_blank');
+  };
+
   return (
     <div id='home'>
       <motion.div
@@ -41,7 +45,7 @@ function Home() {
 
             <div className='flex flex-row gap-7 cursor-pointer mt-4 text-violet-500'>
               {socialLinks.map((item, index) => (
-                <div key={index} className="hover:scale-110 transition-transform duration-200" onClick={() => window.open(item.link, '_blank')}>
+                <div key={index} className="hover:scale-110 transition-transform duration-200" onClick={() => handleIconClick(item.link)}>
                   {item.icon}
                 </div>
               ))}

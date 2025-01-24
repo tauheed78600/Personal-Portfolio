@@ -1,5 +1,4 @@
 import React from 'react'
-import { SiAndroid, SiFirebase, SiMysql, SiSpring, SiJavascript } from 'react-icons/si'
 import { FiExternalLink } from 'react-icons/fi'
 
 function Coding() {
@@ -22,15 +21,22 @@ function Coding() {
     <div className='p-8'>
       <div className='grid md:grid-cols-3 grid-cols-1 gap-6'>
         {androidProjects.map((project, index) => (
-          <div key={index} className='bg-transparent border border-gray-300 backdrop-blur-xl shadow-2xl border border-purple-500 rounded-xl p-6 hover:scale-105 hover:shadow-purple-500/50 transition-transform duration-500 ease-in-out relative overflow-hidden'>
+          <div
+            key={index}
+            className='relative bg-transparent border border-gray-300 backdrop-blur-xl shadow-2xl border-purple-500 rounded-xl p-6 hover:scale-105 hover:shadow-purple-500/50 transition-transform duration-500 ease-in-out overflow-hidden'
+          >
             <div className='absolute inset-0 bg-gradient-to-br from-transparent to-purple-900 opacity-20 rounded-xl'></div>
-            <div className='flex flex-row justify-between'>
-              <h3 className='text-center text-purple-100 text-2xl font-semibold drop-shadow-md'>{project.title}</h3>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <FiExternalLink className='text-white text-xl cursor-pointer' onClick={() => window.open(project.link, '_blank')} />
+            <div className='flex flex-row justify-between relative z-10'>
+              <h3 className='text-center text-purple-100 text-2xl font-semibold drop-shadow-md'>
+                {project.title}
+              </h3>
+              <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                <FiExternalLink className='text-white text-xl cursor-pointer' />
               </a>
             </div>
-            <p className='mt-4 text-gray-300 text-sm leading-relaxed'>{project.description}</p>
+            <p className='mt-4 text-gray-300 text-sm leading-relaxed relative z-10'>
+              {project.description}
+            </p>
           </div>
         ))}
       </div>

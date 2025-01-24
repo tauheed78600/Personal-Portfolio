@@ -25,11 +25,11 @@ function Header({ refs }) {
             {/* Sidebar */}
             <div
                 style={{ backgroundColor: 'rgb(10, 14, 40)' }}
-                className={`fixed top-0 left-0 h-full w-3/4 bg-white shadow-xl bg-purple-600 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:hidden`}>
+                className={`fixed top-0 left-0 z-10 h-full w-3/4 bg-white shadow-xl bg-purple-600 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:hidden`}>
                 <div className='p-4'>
                     <div className='flex justify-between items-start'>
                         <div className='flex flex-row gap-4'>
-                            <div className='h-14 w-14 bg-black rounded-full p-3'><p className='text-white text-xl'>TD</p></div>
+                            <div className='h-14 w-16 bg-white rounded-full p-3'><p className='text-black font-extrabold text-xl'>TD</p></div>
                             <div className='flex flex-col gap-1'>
                                 <p className='font-semibold whitespace-nowrap text-white'>Tauheed Darekar</p>
                                 <p className='text-sm text-gray-100'>Hi There, I'm a Software Developer</p>
